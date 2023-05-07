@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>TestNG:  D:/Test_Frame</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>D:/Test_Frame</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 08 00:04:19 EEST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>8 seconds (8900 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.LoginPage.LoginPageTests.checkThatInformationWrapperIsPresent()'><b>checkThatInformationWrapperIsPresent</b><br>Test class: Tests.LoginPage.LoginPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginPage.LoginPageTests@54534abf</td></tr>
+<tr>
+<td title='Tests.LoginPage.LoginPageTests.checkThatLogoLoginWrapperIsPresent()'><b>checkThatLogoLoginWrapperIsPresent</b><br>Test class: Tests.LoginPage.LoginPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginPage.LoginPageTests@54534abf</td></tr>
+<tr>
+<td title='Tests.LoginPage.LoginPageTests.checkToLoginLockedUser()'><b>checkToLoginLockedUser</b><br>Test class: Tests.LoginPage.LoginPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginPage.LoginPageTests@54534abf</td></tr>
+<tr>
+<td title='Tests.LoginPage.LoginPageTests.checkToLoginProblemUser()'><b>checkToLoginProblemUser</b><br>Test class: Tests.LoginPage.LoginPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginPage.LoginPageTests@54534abf</td></tr>
+<tr>
+<td title='Tests.InventoryPageTest.InventoryPageTests.checkThatAllCardsHaveAddIconImg()'><b>checkThatAllCardsHaveAddIconImg</b><br>Test class: Tests.InventoryPageTest.InventoryPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.InventoryPageTest.InventoryPageTests@6d868997</td></tr>
+<tr>
+<td title='Tests.InventoryPageTest.InventoryPageTests.checkThatAllCardsHaveDescribe()'><b>checkThatAllCardsHaveDescribe</b><br>Test class: Tests.InventoryPageTest.InventoryPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.InventoryPageTest.InventoryPageTests@6d868997</td></tr>
+<tr>
+<td title='Tests.LoginPage.LoginPageTests.checkThatLogoIsPresent()'><b>checkThatLogoIsPresent</b><br>Test class: Tests.LoginPage.LoginPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginPage.LoginPageTests@54534abf</td></tr>
+<tr>
+<td title='Tests.LoginPage.LoginPageTests.checkToLoginCorrectUser()'><b>checkToLoginCorrectUser</b><br>Test class: Tests.LoginPage.LoginPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginPage.LoginPageTests@54534abf</td></tr>
+<tr>
+<td title='Tests.InventoryPageTest.InventoryPageTests.checkThatLogoIsPresentOnPage()'><b>checkThatLogoIsPresentOnPage</b><br>Test class: Tests.InventoryPageTest.InventoryPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.InventoryPageTest.InventoryPageTests@6d868997</td></tr>
+<tr>
+<td title='Tests.LoginPage.LoginPageTests.thatErrorMessageCanClosed()'><b>thatErrorMessageCanClosed</b><br>Test class: Tests.LoginPage.LoginPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginPage.LoginPageTests@54534abf</td></tr>
+<tr>
+<td title='Tests.InventoryPageTest.InventoryPageTests.checkThatAllCardsHaveName()'><b>checkThatAllCardsHaveName</b><br>Test class: Tests.InventoryPageTest.InventoryPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.InventoryPageTest.InventoryPageTests@6d868997</td></tr>
+<tr>
+<td title='Tests.InventoryPageTest.InventoryPageTests.checkThatAllProductsCardIsPresent()'><b>checkThatAllProductsCardIsPresent</b><br>Test class: Tests.InventoryPageTest.InventoryPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.InventoryPageTest.InventoryPageTests@6d868997</td></tr>
+<tr>
+<td title='Tests.InventoryPageTest.InventoryPageTests.checkThatAllCardsHaveItemDescription()'><b>checkThatAllCardsHaveItemDescription</b><br>Test class: Tests.InventoryPageTest.InventoryPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.InventoryPageTest.InventoryPageTests@6d868997</td></tr>
+<tr>
+<td title='Tests.InventoryPageTest.InventoryPageTests.checkThatAllCardsHavePrice()'><b>checkThatAllCardsHavePrice</b><br>Test class: Tests.InventoryPageTest.InventoryPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.InventoryPageTest.InventoryPageTests@6d868997</td></tr>
+<tr>
+<td title='Tests.LoginPage.LoginPageTests.checkThatErrorWrapperIsPresent()'><b>checkThatErrorWrapperIsPresent</b><br>Test class: Tests.LoginPage.LoginPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginPage.LoginPageTests@54534abf</td></tr>
+<tr>
+<td title='Tests.LoginPage.LoginPageTests.justPressLoginButton()'><b>justPressLoginButton</b><br>Test class: Tests.LoginPage.LoginPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginPage.LoginPageTests@54534abf</td></tr>
+<tr>
+<td title='Tests.InventoryPageTest.InventoryPageTests.checkThatSortContainerIsPresent()'><b>checkThatSortContainerIsPresent</b><br>Test class: Tests.InventoryPageTest.InventoryPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.InventoryPageTest.InventoryPageTests@6d868997</td></tr>
+<tr>
+<td title='Tests.LoginPage.LoginPageTests.checkToLoginPerformanceGlitchUser()'><b>checkToLoginPerformanceGlitchUser</b><br>Test class: Tests.LoginPage.LoginPageTests</td>
+<td></td>
+<td>5</td>
+<td>Tests.LoginPage.LoginPageTests@54534abf</td></tr>
+<tr>
+<td title='Tests.LoginPage.LoginPageTests.justEnterOnlyUserStandard()'><b>justEnterOnlyUserStandard</b><br>Test class: Tests.LoginPage.LoginPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.LoginPage.LoginPageTests@54534abf</td></tr>
+<tr>
+<td title='Tests.InventoryPageTest.InventoryPageTests.checkThatAllCardsHaveAddButton()'><b>checkThatAllCardsHaveAddButton</b><br>Test class: Tests.InventoryPageTest.InventoryPageTests</td>
+<td></td>
+<td>0</td>
+<td>Tests.InventoryPageTest.InventoryPageTests@6d868997</td></tr>
+</table><p>
+</body>
+</html>

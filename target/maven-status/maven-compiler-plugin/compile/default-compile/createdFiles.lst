@@ -1,0 +1,10 @@
+Constants\Constant.class
+Common\Config.class
+Constants\Constant$UrlVariable.class
+Constants\Constant$UserVariableForLogin.class
+Constants\Constant$TimeOutVariable.class
+AllPages\Pages\InventoryPage.class
+Constants\Constant$passwordVariableToLoginUsers.class
+AllPages\Pages\LoginPage.class
+Common\CommonActions.class
+AllPages\Base\BasePage.class
