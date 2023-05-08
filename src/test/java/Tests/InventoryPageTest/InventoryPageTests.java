@@ -118,4 +118,79 @@ public class InventoryPageTests extends BaseTest {
                 .checkThatSortContainerIsPresent();
     }
 
+
+    @Test
+    public void checkThatSortContainerIsWorkZA(){
+        basePage.open(LOGIN_PAGE);
+
+        loginPage
+                .fillFormUserByValidStandardUserUsername()
+                .fillFormPasswordToAllUsersByValidStandardPassword()
+                .pressLoginsButton();
+        inventoryPage
+                .checkThatSortContainerIsWorkZA();
+    }
+
+
+    @Test
+    public void checkThatSortContainerIsWorkLowToHigh(){
+        basePage.open(LOGIN_PAGE);
+
+        loginPage
+                .fillFormUserByValidStandardUserUsername()
+                .fillFormPasswordToAllUsersByValidStandardPassword()
+                .pressLoginsButton();
+        inventoryPage
+                .checkThatSortContainerIsWorkLowToHigh();
+    }
+
+    @Test
+    public void checkThatSortContainerIsWorkHighToLow(){
+        basePage.open(LOGIN_PAGE);
+
+        loginPage
+                .fillFormUserByValidStandardUserUsername()
+                .fillFormPasswordToAllUsersByValidStandardPassword()
+                .pressLoginsButton();
+        inventoryPage
+                .checkThatSortContainerIsWorkHighToLow();
+    }
+
+    @Test
+    public void checkThatShoppingCardIsClickable(){
+        basePage.open(LOGIN_PAGE);
+
+        loginPage
+                .fillFormUserByValidStandardUserUsername()
+                .fillFormPasswordToAllUsersByValidStandardPassword()
+                .pressLoginsButton();
+        inventoryPage
+                .checkThatShoppingCardIsClickable();
+    }
+
+    @Test
+    public void checkThatSortContainerIsWorkAZ(){
+        basePage.open(LOGIN_PAGE);
+
+        loginPage
+                .fillFormUserByValidStandardUserUsername()
+                .fillFormPasswordToAllUsersByValidStandardPassword()
+                .pressLoginsButton();
+        inventoryPage
+                .checkThatSortContainerIsWorkAZ();
+    }
+
+    @Test
+    public void clickAndCheckButtonMenu(){
+        basePage.open(LOGIN_PAGE);
+
+        loginPage
+                .fillFormUserByValidStandardUserUsername()
+                .fillFormPasswordToAllUsersByValidStandardPassword()
+                .pressLoginsButton();
+        inventoryPage
+                .clickAndCheckButtonMenu();
+    }
+
+
 }

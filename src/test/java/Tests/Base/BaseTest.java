@@ -27,11 +27,11 @@ public class BaseTest {
         }
     }
 
-    @AfterSuite
+   /* @AfterSuite
     public void close(){
         if (HOLD_BROWSER_OPEN){
             driver.close();
             driver.quit();
         }
-    }
+    }*/
 }
