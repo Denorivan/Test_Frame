@@ -34,7 +34,7 @@ public class InventoryPage extends BasePage {
     private final By buttonMenuLeft = By.id("react-burger-menu-btn");
     private final By buttonMenuLeftAfterClick = By.xpath("//div[@class='bm-menu']");
     private final By allItems = By.id("inventory_sidebar_link");
-    private final By about = By.id("inventory_sidebar_link");
+    private final By about = By.id("about_sidebar_link");
     private final By logout = By.id("logout_sidebar_link");
     private final By resetAppState = By.id("reset_sidebar_link");
 
@@ -232,9 +232,42 @@ public class InventoryPage extends BasePage {
     }
 
     public InventoryPage clickOnAllItemsButton(){
+        String expectedUrl = "https://www.saucedemo.com/inventory.html";
         driver.findElement(buttonMenuLeft).click();
         driver.findElement(allItems).click();
+        String currentUrl = driver.getCurrentUrl();
+        Assert.assertEquals(expectedUrl, currentUrl, "Correct redirect");
 
+        return this;
+    }
+
+    public InventoryPage checkThatAboutIsWorking(){
+        String expectedUrl = "https://saucelabs.com/";
+        driver.findElement(buttonMenuLeft).click();
+        driver.findElement(about).click();
+        String currentUrl = driver.getCurrentUrl();
+
+        Assert.assertEquals(expectedUrl, currentUrl, "Correct redirect");
+        return this;
+    }
+
+    public InventoryPage checkThatResetAppStateIsWorking (){
+        String expectedUrl = driver.getCurrentUrl();
+        driver.findElement(buttonMenuLeft).click();
+        driver.findElement(resetAppState).click();
+        String currentUrl = driver.getCurrentUrl();
+
+        Assert.assertEquals(expectedUrl, currentUrl, "Correct redirect");
+        return this;
+    }
+
+    public InventoryPage checkThatLogoutIsWorking(){
+        String expectedUrl = "https://www.saucedemo.com/";
+        driver.findElement(buttonMenuLeft).click();
+        driver.findElement(logout).click();
+        String currentUrl = driver.getCurrentUrl();
+
+        Assert.assertEquals(expectedUrl, currentUrl, "Correct redirect");
         return this;
     }
 

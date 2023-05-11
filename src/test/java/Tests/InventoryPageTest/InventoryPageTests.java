@@ -192,5 +192,53 @@ public class InventoryPageTests extends BaseTest {
                 .clickAndCheckButtonMenu();
     }
 
+    @Test
+    public void checkThatAboutIsWorking(){
+        basePage.open(LOGIN_PAGE);
+
+        loginPage
+                .fillFormUserByValidStandardUserUsername()
+                .fillFormPasswordToAllUsersByValidStandardPassword()
+                .pressLoginsButton();
+        inventoryPage
+                .checkThatAboutIsWorking();
+    }
+
+    @Test
+    public void clickOnAllItemsButton(){
+        basePage.open(LOGIN_PAGE);
+
+        loginPage
+                .fillFormUserByValidStandardUserUsername()
+                .fillFormPasswordToAllUsersByValidStandardPassword()
+                .pressLoginsButton();
+        inventoryPage
+                .clickOnAllItemsButton();
+    }
+
+    @Test
+    public void checkThatResetAppStateIsWorking(){
+        basePage.open(LOGIN_PAGE);
+
+        loginPage
+                .fillFormUserByValidStandardUserUsername()
+                .fillFormPasswordToAllUsersByValidStandardPassword()
+                .pressLoginsButton();
+        inventoryPage
+                .checkThatResetAppStateIsWorking();
+    }
+
+    @Test
+    public void checkThatLogoutIsWorking(){
+        basePage.open(LOGIN_PAGE);
+
+        loginPage
+                .fillFormUserByValidStandardUserUsername()
+                .fillFormPasswordToAllUsersByValidStandardPassword()
+                .pressLoginsButton();
+        inventoryPage
+                .checkThatLogoutIsWorking();
+    }
+
 
 }
