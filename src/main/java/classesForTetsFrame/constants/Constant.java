@@ -1,6 +1,6 @@
 package classesForTetsFrame.constants;
 
-public class constant {
+public class Constant {
     public static class TimeOutVariable{
         public static final int IMPLICIT_WAIT = 1;
         public static final int EXPLICIT_WAIT = 2;

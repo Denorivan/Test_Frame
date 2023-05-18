@@ -7,13 +7,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static classesForTetsFrame.constants.constant.TimeOutVariable.EXPLICIT_WAIT;
+import static classesForTetsFrame.constants.Constant.TimeOutVariable.EXPLICIT_WAIT;
 
-public class basePage {
+public class BasePage {
 
     protected WebDriver driver;
 
-    public basePage(WebDriver driver){
+    public BasePage(WebDriver driver){
         this.driver=driver;
     }
 
