@@ -1,22 +1,22 @@
 package tests.base;
 
-import allPages.base.basePage;
-import allPages.pages.inventoryPage;
-import allPages.pages.loginPage;
-import common.commonActions;
+import classesForTetsFrame.allPages.base.basePage;
+import classesForTetsFrame.allPages.pages.inventoryPage;
+import classesForTetsFrame.allPages.pages.loginPage;
+import classesForTetsFrame.common.commonActions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 
-import static common.config.CLEAR_STORAGE;
-import static common.config.HOLD_BROWSER_OPEN;
+import static classesForTetsFrame.common.config.CLEAR_STORAGE;
+import static classesForTetsFrame.common.config.HOLD_BROWSER_OPEN;
 
 public class baseTest {
     protected WebDriver driver = commonActions.createDriver();
-    protected allPages.base.basePage basePage = new basePage(driver);
-    protected allPages.pages.loginPage loginPage = new loginPage(driver);
-    protected allPages.pages.inventoryPage inventoryPage = new inventoryPage(driver);
+    protected classesForTetsFrame.allPages.base.basePage basePage = new basePage(driver);
+    protected classesForTetsFrame.allPages.pages.loginPage loginPage = new loginPage(driver);
+    protected classesForTetsFrame.allPages.pages.inventoryPage inventoryPage = new inventoryPage(driver);
 
     @AfterTest
     public void clearCookLocalStorage(){

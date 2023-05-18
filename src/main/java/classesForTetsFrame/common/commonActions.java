@@ -1,4 +1,4 @@
-package common;
+package classesForTetsFrame.common;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,14 +8,13 @@ import java.time.Duration;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import static common.config.PLATFORM_AND_BROWSER;
-import static constants.constant.TimeOutVariable.IMPLICIT_WAIT;
+import static classesForTetsFrame.constants.constant.TimeOutVariable.IMPLICIT_WAIT;
 
 public class commonActions {
     public static WebDriver createDriver(){
 
         WebDriver driver = null;
-        switch (PLATFORM_AND_BROWSER){
+        switch (config.PLATFORM_AND_BROWSER){
             case "win_chrome":{
                 System.setProperty("webdriver.chrome.driver","src/main/resources/drivers/chromedriver.exe");
                 ChromeOptions options = new ChromeOptions();
@@ -23,7 +22,7 @@ public class commonActions {
                 driver = new ChromeDriver(options);
                 break;
             } default:{
-                Assert.fail("Incorrect platform for browser name: " + PLATFORM_AND_BROWSER);
+                Assert.fail("Incorrect platform for browser name: " + config.PLATFORM_AND_BROWSER);
             }
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT));

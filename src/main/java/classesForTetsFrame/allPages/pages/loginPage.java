@@ -1,11 +1,11 @@
-package allPages.pages;
+package classesForTetsFrame.allPages.pages;
 
-import allPages.base.basePage;
+import classesForTetsFrame.allPages.base.basePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static constants.constant.passwordVariableToLoginUsers.*;
-import static constants.constant.UserVariableForLogin.*;
+import static classesForTetsFrame.constants.constant.passwordVariableToLoginUsers.*;
+import static classesForTetsFrame.constants.constant.UserVariableForLogin.*;
 public class loginPage extends basePage {
     public loginPage(WebDriver driver) {
         super(driver);

@@ -4,7 +4,7 @@ import tests.base.baseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static constants.constant.UrlVariable.LOGIN_PAGE;
+import static classesForTetsFrame.constants.constant.UrlVariable.LOGIN_PAGE;
 
 
 

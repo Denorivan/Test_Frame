@@ -1,4 +1,4 @@
-package allPages.base;
+package classesForTetsFrame.allPages.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static constants.constant.TimeOutVariable.EXPLICIT_WAIT;
+import static classesForTetsFrame.constants.constant.TimeOutVariable.EXPLICIT_WAIT;
 
 public class basePage {
 

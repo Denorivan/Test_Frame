@@ -1,6 +1,6 @@
-D:\Test_Frame\src\main\java\common\commonActions.java
-D:\Test_Frame\src\main\java\allPages\pages\loginPage.java
-D:\Test_Frame\src\main\java\common\config.java
-D:\Test_Frame\src\main\java\allPages\base\basePage.java
-D:\Test_Frame\src\main\java\allPages\pages\inventoryPage.java
-D:\Test_Frame\src\main\java\constants\constant.java
+D:\Test_Frame\src\main\java\classesForTetsFrame\constants\constant.java
+D:\Test_Frame\src\main\java\classesForTetsFrame\allPages\pages\loginPage.java
+D:\Test_Frame\src\main\java\classesForTetsFrame\allPages\pages\inventoryPage.java
+D:\Test_Frame\src\main\java\classesForTetsFrame\common\config.java
+D:\Test_Frame\src\main\java\classesForTetsFrame\common\commonActions.java
+D:\Test_Frame\src\main\java\classesForTetsFrame\allPages\base\basePage.java

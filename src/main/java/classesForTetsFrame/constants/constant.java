@@ -1,4 +1,4 @@
-package constants;
+package classesForTetsFrame.constants;
 
 public class constant {
     public static class TimeOutVariable{
