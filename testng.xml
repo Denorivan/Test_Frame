@@ -3,9 +3,9 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="D:/Test_Frame">
         <classes>
-            <class name="Tests.InventoryPageTest.InventoryPageTests">
+            <class name="tests.InventoryPageTest.inventoryPageTests">
             </class>
-            <class name="Tests.LoginPage.LoginPageTests">
+            <class name="tests.loginPage.loginPageTests">
             </class>
         </classes>
     </test>

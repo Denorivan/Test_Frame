@@ -1,17 +1,17 @@
-package Common;
+package common;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import static Common.Config.PLATFORM_AND_BROWSER;
-import static Constants.Constant.TimeOutVariable.IMPLICIT_WAIT;
+import static common.config.PLATFORM_AND_BROWSER;
+import static constants.constant.TimeOutVariable.IMPLICIT_WAIT;
 
-public class CommonActions {
+public class commonActions {
     public static WebDriver createDriver(){
 
         WebDriver driver = null;

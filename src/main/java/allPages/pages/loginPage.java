@@ -1,13 +1,13 @@
-package AllPages.Pages;
+package allPages.pages;
 
-import AllPages.Base.BasePage;
+import allPages.base.basePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static Constants.Constant.passwordVariableToLoginUsers.*;
-import static Constants.Constant.UserVariableForLogin.*;
-public class LoginPage extends BasePage {
-    public LoginPage(WebDriver driver) {
+import static constants.constant.passwordVariableToLoginUsers.*;
+import static constants.constant.UserVariableForLogin.*;
+public class loginPage extends basePage {
+    public loginPage(WebDriver driver) {
         super(driver);
     }
 
@@ -25,43 +25,43 @@ public class LoginPage extends BasePage {
     private final By informationToLogin = By.xpath("//div[@class='login_credentials_wrap-inner']");
 
 
-    public LoginPage fillFormUserByValidStandardUserUsername(){
+    public loginPage fillFormUserByValidStandardUserUsername(){
         driver.findElement(usernameFieldInLoginForm).sendKeys(enterStandardUsername);
         return  this;
     }
-    public LoginPage fillFormUserByValidLockedUserUsername(){
+    public loginPage fillFormUserByValidLockedUserUsername(){
         driver.findElement(usernameFieldInLoginForm).sendKeys(enterLockedOutUsername);
         return  this;
     }
 
-    public LoginPage fillFormUserByValidProblemUserUsername(){
+    public loginPage fillFormUserByValidProblemUserUsername(){
         driver.findElement(usernameFieldInLoginForm).sendKeys(enterProblemUsername);
         return  this;
     }
 
-    public LoginPage fillFormUserByValidPerformanceGlitchUsername(){
+    public loginPage fillFormUserByValidPerformanceGlitchUsername(){
         driver.findElement(usernameFieldInLoginForm).sendKeys(enterPerformanceGlitchUser);
         return  this;
     }
 
-    public LoginPage fillFormPasswordToAllUsersByValidStandardPassword(){
+    public loginPage fillFormPasswordToAllUsersByValidStandardPassword(){
         driver.findElement(passwordFieldInLoginForm).sendKeys(passwordForAllUsers);
         return  this;
     }
 
 
-    public LoginPage pressLoginsButton(){
+    public loginPage pressLoginsButton(){
         driver.findElement(loginButton).click();
         return this;
     }
 
-    public LoginPage findElementToCheckThatLoginWasSuccessful(){
+    public loginPage findElementToCheckThatLoginWasSuccessful(){
         driver.findElement(logoInNextPageForCheckSuccessfulLogin);
         return this;
 
     }
 
-    public LoginPage findErrorMessage(String message){
+    public loginPage findErrorMessage(String message){
 
         String findMessage = driver.findElement(blockedUserMessage).getText();
         if (message.equals(findMessage)){
@@ -71,38 +71,38 @@ public class LoginPage extends BasePage {
         }
     }
 
-    public LoginPage checkThatUserIsProblemUser(){
+    public loginPage checkThatUserIsProblemUser(){
         driver.findElement(checkThatUserIsProblem);
         return this;
     }
 
 
-    public  LoginPage errorFormIsVisible(){
+    public loginPage errorFormIsVisible(){
         driver.findElement(errorMessage).getText();
         return this;
     }
 
-    public LoginPage findLogo(){
+    public loginPage findLogo(){
         driver.findElement(logo);
         return this;
     }
 
-    public LoginPage findErrorWrapper(){
+    public loginPage findErrorWrapper(){
         driver.findElement(errorMessageContainer);
         return this;
     }
 
-    public LoginPage findRegistrationForm(){
+    public loginPage findRegistrationForm(){
         driver.findElement(registrationForm);
         return this;
     }
 
-    public LoginPage findInformationHelperToLoginForm(){
+    public loginPage findInformationHelperToLoginForm(){
         driver.findElement(informationToLogin);
         return this;
     }
 
-    public LoginPage findAndClickOnCrossInErrorMessageToCloseHim(){
+    public loginPage findAndClickOnCrossInErrorMessageToCloseHim(){
         driver.findElement(crossInErrorMessageToCloseHim).click();
         return this;
     }

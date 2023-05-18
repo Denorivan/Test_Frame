@@ -1,6 +1,6 @@
-package AllPages.Pages;
+package allPages.pages;
 
-import AllPages.Base.BasePage;
+import allPages.base.basePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,8 +9,8 @@ import org.testng.Assert;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InventoryPage extends BasePage {
-    public InventoryPage(WebDriver driver) {
+public class inventoryPage extends basePage {
+    public inventoryPage(WebDriver driver) {
         super(driver);
     }
 
@@ -40,7 +40,7 @@ public class InventoryPage extends BasePage {
 
 
 
-    public InventoryPage checkAmountOfProductsCards (int expectedCards){
+    public inventoryPage checkAmountOfProductsCards (int expectedCards){
         int countCards = driver.findElements(card).size();
 
         System.out.println(countCards);
@@ -48,12 +48,12 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage checkThatLogoIsPresentOnPage(){
+    public inventoryPage checkThatLogoIsPresentOnPage(){
         driver.findElement(logo);
         return this;
     }
 
-    public InventoryPage checkThatAllCardsHavePrice() {
+    public inventoryPage checkThatAllCardsHavePrice() {
         List<WebElement> elements = driver.findElements(card);
         for (WebElement oneItem : elements) {
             WebElement find = oneItem.findElement(nestedPriceFromCard);
@@ -62,7 +62,7 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage checkThatAllCardsHaveName() {
+    public inventoryPage checkThatAllCardsHaveName() {
         List<WebElement> elements = driver.findElements(card);
         for (WebElement oneItem : elements) {
             WebElement find = oneItem.findElement(nestedNameFromCard);
@@ -70,7 +70,7 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage checkThatAllCardsHaveDescribe() {
+    public inventoryPage checkThatAllCardsHaveDescribe() {
         List<WebElement> elements = driver.findElements(card);
         for (WebElement oneItem : elements) {
             WebElement find = oneItem.findElement(nestedDescribeFromCard);
@@ -79,7 +79,7 @@ public class InventoryPage extends BasePage {
     }
 
 
-    public InventoryPage checkThatAllCardsHaveAddButton() {
+    public inventoryPage checkThatAllCardsHaveAddButton() {
         List<WebElement> elements = driver.findElements(card);
         for (WebElement oneItem : elements) {
             WebElement find = oneItem.findElement(nestedAddButtonFromCard);
@@ -87,7 +87,7 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage checkThatAllCardsHaveAddIconImg() {
+    public inventoryPage checkThatAllCardsHaveAddIconImg() {
         List<WebElement> elements = driver.findElements(card);
         for (WebElement oneItem : elements) {
             WebElement find = oneItem.findElement(nestedAddIconImgFromCard);
@@ -95,7 +95,7 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage checkThatAllCardsHaveItemDescription() {
+    public inventoryPage checkThatAllCardsHaveItemDescription() {
         List<WebElement> elements = driver.findElements(card);
         for (WebElement oneItem : elements) {
             WebElement find = oneItem.findElement(nestedItemDescriptionFromCard);
@@ -103,12 +103,12 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage checkThatSortContainerIsPresent(){
+    public inventoryPage checkThatSortContainerIsPresent(){
         driver.findElement(sortContainer);
         return this;
     }
 
-    public InventoryPage checkThatSortContainerIsWorkZA(){
+    public inventoryPage checkThatSortContainerIsWorkZA(){
         ArrayList<String> expectedTextValueName = new ArrayList<>();
         expectedTextValueName.add("Test.allTheThings() T-Shirt (Red)");
         expectedTextValueName.add("Sauce Labs Onesie");
@@ -136,7 +136,7 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage checkThatSortContainerIsWorkLowToHigh(){
+    public inventoryPage checkThatSortContainerIsWorkLowToHigh(){
         ArrayList<String> expectedTextValuePriceLowToHigh = new ArrayList<>();
         expectedTextValuePriceLowToHigh.add("$7.99");
         expectedTextValuePriceLowToHigh.add("$9.99");
@@ -164,7 +164,7 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage checkThatSortContainerIsWorkHighToLow(){
+    public inventoryPage checkThatSortContainerIsWorkHighToLow(){
         ArrayList<String> expectedTextValuePriceHighToLow = new ArrayList<>();
         expectedTextValuePriceHighToLow.add("$49.99");
         expectedTextValuePriceHighToLow.add("$29.99");
@@ -192,13 +192,13 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage checkThatShoppingCardIsClickable(){
+    public inventoryPage checkThatShoppingCardIsClickable(){
         driver.findElement(shoppingCard).click();
         driver.findElement(shoppingCardTitleAfterClick);
         return this;
     }
 
-    public InventoryPage checkThatSortContainerIsWorkAZ(){
+    public inventoryPage checkThatSortContainerIsWorkAZ(){
         ArrayList<String> expectedTextValueName = new ArrayList<>();
         expectedTextValueName.add("Sauce Labs Backpack");
         expectedTextValueName.add("Sauce Labs Bike Light");
@@ -225,13 +225,13 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage clickAndCheckButtonMenu (){
+    public inventoryPage clickAndCheckButtonMenu (){
         driver.findElement(buttonMenuLeft).click();
         driver.findElement(buttonMenuLeftAfterClick);
         return this;
     }
 
-    public InventoryPage clickOnAllItemsButton(){
+    public inventoryPage clickOnAllItemsButton(){
         String expectedUrl = "https://www.saucedemo.com/inventory.html";
         driver.findElement(buttonMenuLeft).click();
         driver.findElement(allItems).click();
@@ -241,7 +241,7 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage checkThatAboutIsWorking(){
+    public inventoryPage checkThatAboutIsWorking(){
         String expectedUrl = "https://saucelabs.com/";
         driver.findElement(buttonMenuLeft).click();
         driver.findElement(about).click();
@@ -251,7 +251,7 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage checkThatResetAppStateIsWorking (){
+    public inventoryPage checkThatResetAppStateIsWorking (){
         String expectedUrl = driver.getCurrentUrl();
         driver.findElement(buttonMenuLeft).click();
         driver.findElement(resetAppState).click();
@@ -261,7 +261,7 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage checkThatLogoutIsWorking(){
+    public inventoryPage checkThatLogoutIsWorking(){
         String expectedUrl = "https://www.saucedemo.com/";
         driver.findElement(buttonMenuLeft).click();
         driver.findElement(logout).click();

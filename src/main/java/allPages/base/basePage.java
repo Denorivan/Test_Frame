@@ -1,4 +1,4 @@
-package AllPages.Base;
+package allPages.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,13 +7,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static Constants.Constant.TimeOutVariable.EXPLICIT_WAIT;
+import static constants.constant.TimeOutVariable.EXPLICIT_WAIT;
 
-public class BasePage {
+public class basePage {
 
     protected WebDriver driver;
 
-    public  BasePage(WebDriver driver){
+    public basePage(WebDriver driver){
         this.driver=driver;
     }
 

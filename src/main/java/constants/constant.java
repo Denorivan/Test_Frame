@@ -1,6 +1,6 @@
-package Constants;
+package constants;
 
-public class Constant {
+public class constant {
     public static class TimeOutVariable{
         public static final int IMPLICIT_WAIT = 1;
         public static final int EXPLICIT_WAIT = 2;

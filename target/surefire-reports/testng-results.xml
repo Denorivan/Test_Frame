@@ -1,139 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="31" passed="30" failed="0" skipped="0">
+<testng-results ignored="2" total="32" passed="30" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-11T17:30:27 EEST" name="All Test Suite" finished-at="2023-05-11T17:30:42 EEST" duration-ms="14943">
+  <suite started-at="2023-05-18T17:24:08 EEST" name="All Test Suite" finished-at="2023-05-18T17:24:25 EEST" duration-ms="17280">
     <groups>
     </groups>
-    <test started-at="2023-05-11T17:30:27 EEST" name="D:/Test_Frame" finished-at="2023-05-11T17:30:42 EEST" duration-ms="14943">
-      <class name="Tests.LoginPage.LoginPageTests">
-        <test-method signature="checkThatErrorWrapperIsPresent()[pri:0, instance:Tests.LoginPage.LoginPageTests@27abb83e]" started-at="2023-05-11T17:30:35 EEST" name="checkThatErrorWrapperIsPresent" finished-at="2023-05-11T17:30:36 EEST" duration-ms="394" status="PASS">
+    <test started-at="2023-05-18T17:24:08 EEST" name="D:/Test_Frame" finished-at="2023-05-18T17:24:25 EEST" duration-ms="17280">
+      <class name="tests.loginPage.loginPageTests">
+        <test-method signature="checkThatErrorWrapperIsPresent()[pri:0, instance:tests.loginPage.loginPageTests@1623bbe5]" started-at="2023-05-18T17:24:19 EEST" name="checkThatErrorWrapperIsPresent" finished-at="2023-05-18T17:24:19 EEST" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatErrorWrapperIsPresent -->
-        <test-method signature="checkThatInformationWrapperIsPresent()[pri:0, instance:Tests.LoginPage.LoginPageTests@27abb83e]" started-at="2023-05-11T17:30:36 EEST" name="checkThatInformationWrapperIsPresent" finished-at="2023-05-11T17:30:36 EEST" duration-ms="82" status="PASS">
+        <test-method signature="checkThatInformationWrapperIsPresent()[pri:0, instance:tests.loginPage.loginPageTests@1623bbe5]" started-at="2023-05-18T17:24:19 EEST" name="checkThatInformationWrapperIsPresent" finished-at="2023-05-18T17:24:19 EEST" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatInformationWrapperIsPresent -->
-        <test-method signature="checkThatLogoIsPresent()[pri:0, instance:Tests.LoginPage.LoginPageTests@27abb83e]" started-at="2023-05-11T17:30:36 EEST" name="checkThatLogoIsPresent" finished-at="2023-05-11T17:30:36 EEST" duration-ms="81" status="PASS">
+        <test-method signature="checkThatLogoIsPresent()[pri:0, instance:tests.loginPage.loginPageTests@1623bbe5]" started-at="2023-05-18T17:24:19 EEST" name="checkThatLogoIsPresent" finished-at="2023-05-18T17:24:19 EEST" duration-ms="62" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatLogoIsPresent -->
-        <test-method signature="checkThatLogoLoginWrapperIsPresent()[pri:0, instance:Tests.LoginPage.LoginPageTests@27abb83e]" started-at="2023-05-11T17:30:36 EEST" name="checkThatLogoLoginWrapperIsPresent" finished-at="2023-05-11T17:30:36 EEST" duration-ms="77" status="PASS">
+        <test-method signature="checkThatLogoLoginWrapperIsPresent()[pri:0, instance:tests.loginPage.loginPageTests@1623bbe5]" started-at="2023-05-18T17:24:19 EEST" name="checkThatLogoLoginWrapperIsPresent" finished-at="2023-05-18T17:24:19 EEST" duration-ms="64" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatLogoLoginWrapperIsPresent -->
-        <test-method signature="checkToLoginCorrectUser()[pri:0, instance:Tests.LoginPage.LoginPageTests@27abb83e]" started-at="2023-05-11T17:30:36 EEST" name="checkToLoginCorrectUser" finished-at="2023-05-11T17:30:36 EEST" duration-ms="255" status="PASS">
+        <test-method signature="checkToLoginCorrectUser()[pri:0, instance:tests.loginPage.loginPageTests@1623bbe5]" started-at="2023-05-18T17:24:19 EEST" name="checkToLoginCorrectUser" finished-at="2023-05-18T17:24:20 EEST" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkToLoginCorrectUser -->
-        <test-method signature="checkToLoginLockedUser()[pri:0, instance:Tests.LoginPage.LoginPageTests@27abb83e]" started-at="2023-05-11T17:30:36 EEST" name="checkToLoginLockedUser" finished-at="2023-05-11T17:30:36 EEST" duration-ms="197" status="PASS">
+        <test-method signature="checkToLoginLockedUser()[pri:0, instance:tests.loginPage.loginPageTests@1623bbe5]" started-at="2023-05-18T17:24:20 EEST" name="checkToLoginLockedUser" finished-at="2023-05-18T17:24:20 EEST" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkToLoginLockedUser -->
-        <test-method signature="checkToLoginPerformanceGlitchUser()[pri:0, instance:Tests.LoginPage.LoginPageTests@27abb83e]" started-at="2023-05-11T17:30:36 EEST" name="checkToLoginPerformanceGlitchUser" finished-at="2023-05-11T17:30:42 EEST" duration-ms="5250" status="PASS">
+        <test-method signature="checkToLoginPerformanceGlitchUser()[pri:0, instance:tests.loginPage.loginPageTests@1623bbe5]" started-at="2023-05-18T17:24:20 EEST" name="checkToLoginPerformanceGlitchUser" finished-at="2023-05-18T17:24:25 EEST" duration-ms="5175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkToLoginPerformanceGlitchUser -->
-        <test-method signature="checkToLoginProblemUser()[pri:0, instance:Tests.LoginPage.LoginPageTests@27abb83e]" started-at="2023-05-11T17:30:42 EEST" name="checkToLoginProblemUser" finished-at="2023-05-11T17:30:42 EEST" duration-ms="269" status="PASS">
+        <test-method signature="checkToLoginProblemUser()[pri:0, instance:tests.loginPage.loginPageTests@1623bbe5]" started-at="2023-05-18T17:24:25 EEST" name="checkToLoginProblemUser" finished-at="2023-05-18T17:24:25 EEST" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkToLoginProblemUser -->
-        <test-method signature="justEnterOnlyUserStandard()[pri:0, instance:Tests.LoginPage.LoginPageTests@27abb83e]" started-at="2023-05-11T17:30:42 EEST" name="justEnterOnlyUserStandard" finished-at="2023-05-11T17:30:42 EEST" duration-ms="200" status="PASS">
+        <test-method signature="justEnterOnlyUserStandard()[pri:0, instance:tests.loginPage.loginPageTests@1623bbe5]" started-at="2023-05-18T17:24:25 EEST" name="justEnterOnlyUserStandard" finished-at="2023-05-18T17:24:25 EEST" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- justEnterOnlyUserStandard -->
-        <test-method signature="justPressLoginButton()[pri:0, instance:Tests.LoginPage.LoginPageTests@27abb83e]" started-at="2023-05-11T17:30:42 EEST" name="justPressLoginButton" finished-at="2023-05-11T17:30:42 EEST" duration-ms="112" status="PASS">
+        <test-method signature="justPressLoginButton()[pri:0, instance:tests.loginPage.loginPageTests@1623bbe5]" started-at="2023-05-18T17:24:25 EEST" name="justPressLoginButton" finished-at="2023-05-18T17:24:25 EEST" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- justPressLoginButton -->
-        <test-method signature="thatErrorMessageCanClosed()[pri:0, instance:Tests.LoginPage.LoginPageTests@27abb83e]" started-at="2023-05-11T17:30:42 EEST" name="thatErrorMessageCanClosed" finished-at="2023-05-11T17:30:42 EEST" duration-ms="143" status="PASS">
+        <test-method signature="thatErrorMessageCanClosed()[pri:0, instance:tests.loginPage.loginPageTests@1623bbe5]" started-at="2023-05-18T17:24:25 EEST" name="thatErrorMessageCanClosed" finished-at="2023-05-18T17:24:25 EEST" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- thatErrorMessageCanClosed -->
-      </class> <!-- Tests.LoginPage.LoginPageTests -->
-      <class name="Tests.InventoryPageTest.InventoryPageTests">
-        <test-method signature="checkThatAboutIsWorking()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:27 EEST" name="checkThatAboutIsWorking" finished-at="2023-05-11T17:30:30 EEST" duration-ms="2674" status="PASS">
+      </class> <!-- tests.loginPage.loginPageTests -->
+      <class name="tests.InventoryPageTest.inventoryPageTests">
+        <test-method signature="checkThatAboutIsWorking()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:08 EEST" name="checkThatAboutIsWorking" finished-at="2023-05-18T17:24:14 EEST" duration-ms="5983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatAboutIsWorking -->
-        <test-method signature="checkThatAllCardsHaveAddButton()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:30 EEST" name="checkThatAllCardsHaveAddButton" finished-at="2023-05-11T17:30:31 EEST" duration-ms="438" status="PASS">
+        <test-method signature="checkThatAllCardsHaveAddButton()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:14 EEST" name="checkThatAllCardsHaveAddButton" finished-at="2023-05-18T17:24:14 EEST" duration-ms="321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatAllCardsHaveAddButton -->
-        <test-method signature="checkThatAllCardsHaveAddIconImg()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:31 EEST" name="checkThatAllCardsHaveAddIconImg" finished-at="2023-05-11T17:30:31 EEST" duration-ms="255" status="PASS">
+        <test-method signature="checkThatAllCardsHaveAddIconImg()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:14 EEST" name="checkThatAllCardsHaveAddIconImg" finished-at="2023-05-18T17:24:15 EEST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatAllCardsHaveAddIconImg -->
-        <test-method signature="checkThatAllCardsHaveDescribe()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:31 EEST" name="checkThatAllCardsHaveDescribe" finished-at="2023-05-11T17:30:31 EEST" duration-ms="250" status="PASS">
+        <test-method signature="checkThatAllCardsHaveDescribe()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:15 EEST" name="checkThatAllCardsHaveDescribe" finished-at="2023-05-18T17:24:15 EEST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatAllCardsHaveDescribe -->
-        <test-method signature="checkThatAllCardsHaveItemDescription()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:31 EEST" name="checkThatAllCardsHaveItemDescription" finished-at="2023-05-11T17:30:31 EEST" duration-ms="231" status="PASS">
+        <test-method signature="checkThatAllCardsHaveItemDescription()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:15 EEST" name="checkThatAllCardsHaveItemDescription" finished-at="2023-05-18T17:24:15 EEST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatAllCardsHaveItemDescription -->
-        <test-method signature="checkThatAllCardsHaveName()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:31 EEST" name="checkThatAllCardsHaveName" finished-at="2023-05-11T17:30:32 EEST" duration-ms="226" status="PASS">
+        <test-method signature="checkThatAllCardsHaveName()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:15 EEST" name="checkThatAllCardsHaveName" finished-at="2023-05-18T17:24:15 EEST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatAllCardsHaveName -->
-        <test-method signature="checkThatAllCardsHavePrice()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:32 EEST" name="checkThatAllCardsHavePrice" finished-at="2023-05-11T17:30:32 EEST" duration-ms="269" status="PASS">
+        <test-method signature="checkThatAllCardsHavePrice()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:15 EEST" name="checkThatAllCardsHavePrice" finished-at="2023-05-18T17:24:16 EEST" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatAllCardsHavePrice -->
-        <test-method signature="checkThatAllProductsCardIsPresent()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:32 EEST" name="checkThatAllProductsCardIsPresent" finished-at="2023-05-11T17:30:32 EEST" duration-ms="186" status="PASS">
+        <test-method signature="checkThatAllProductsCardIsPresent()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:16 EEST" name="checkThatAllProductsCardIsPresent" finished-at="2023-05-18T17:24:16 EEST" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatAllProductsCardIsPresent -->
-        <test-method signature="checkThatLogoIsPresentOnPage()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:32 EEST" name="checkThatLogoIsPresentOnPage" finished-at="2023-05-11T17:30:32 EEST" duration-ms="195" status="PASS">
+        <test-method signature="checkThatLogoIsPresentOnPage()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:16 EEST" name="checkThatLogoIsPresentOnPage" finished-at="2023-05-18T17:24:16 EEST" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatLogoIsPresentOnPage -->
-        <test-method signature="checkThatLogoutIsWorking()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:32 EEST" name="checkThatLogoutIsWorking" finished-at="2023-05-11T17:30:33 EEST" duration-ms="332" status="PASS">
+        <test-method signature="checkThatLogoutIsWorking()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:16 EEST" name="checkThatLogoutIsWorking" finished-at="2023-05-18T17:24:16 EEST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatLogoutIsWorking -->
-        <test-method signature="checkThatResetAppStateIsWorking()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:33 EEST" name="checkThatResetAppStateIsWorking" finished-at="2023-05-11T17:30:33 EEST" duration-ms="296" status="PASS">
+        <test-method signature="checkThatResetAppStateIsWorking()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:16 EEST" name="checkThatResetAppStateIsWorking" finished-at="2023-05-18T17:24:17 EEST" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatResetAppStateIsWorking -->
-        <test-method signature="checkThatShoppingCardIsClickable()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:33 EEST" name="checkThatShoppingCardIsClickable" finished-at="2023-05-11T17:30:33 EEST" duration-ms="228" status="PASS">
+        <test-method signature="checkThatShoppingCardIsClickable()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:17 EEST" name="checkThatShoppingCardIsClickable" finished-at="2023-05-18T17:24:17 EEST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatShoppingCardIsClickable -->
-        <test-method signature="checkThatSortContainerIsPresent()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:33 EEST" name="checkThatSortContainerIsPresent" finished-at="2023-05-11T17:30:33 EEST" duration-ms="195" status="PASS">
+        <test-method signature="checkThatSortContainerIsPresent()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:17 EEST" name="checkThatSortContainerIsPresent" finished-at="2023-05-18T17:24:17 EEST" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatSortContainerIsPresent -->
-        <test-method signature="checkThatSortContainerIsWorkAZ()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:33 EEST" name="checkThatSortContainerIsWorkAZ" finished-at="2023-05-11T17:30:34 EEST" duration-ms="366" status="PASS">
+        <test-method signature="checkThatSortContainerIsWorkAZ()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:17 EEST" name="checkThatSortContainerIsWorkAZ" finished-at="2023-05-18T17:24:17 EEST" duration-ms="327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatSortContainerIsWorkAZ -->
-        <test-method signature="checkThatSortContainerIsWorkHighToLow()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:34 EEST" name="checkThatSortContainerIsWorkHighToLow" finished-at="2023-05-11T17:30:34 EEST" duration-ms="351" status="PASS">
+        <test-method signature="checkThatSortContainerIsWorkHighToLow()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:17 EEST" name="checkThatSortContainerIsWorkHighToLow" finished-at="2023-05-18T17:24:18 EEST" duration-ms="342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatSortContainerIsWorkHighToLow -->
-        <test-method signature="checkThatSortContainerIsWorkLowToHigh()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:34 EEST" name="checkThatSortContainerIsWorkLowToHigh" finished-at="2023-05-11T17:30:34 EEST" duration-ms="364" status="PASS">
+        <test-method signature="checkThatSortContainerIsWorkLowToHigh()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:18 EEST" name="checkThatSortContainerIsWorkLowToHigh" finished-at="2023-05-18T17:24:18 EEST" duration-ms="318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatSortContainerIsWorkLowToHigh -->
-        <test-method signature="checkThatSortContainerIsWorkZA()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:34 EEST" name="checkThatSortContainerIsWorkZA" finished-at="2023-05-11T17:30:35 EEST" duration-ms="385" status="PASS">
+        <test-method signature="checkThatSortContainerIsWorkZA()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:18 EEST" name="checkThatSortContainerIsWorkZA" finished-at="2023-05-18T17:24:18 EEST" duration-ms="319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatSortContainerIsWorkZA -->
-        <test-method signature="clickAndCheckButtonMenu()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:35 EEST" name="clickAndCheckButtonMenu" finished-at="2023-05-11T17:30:35 EEST" duration-ms="242" status="PASS">
+        <test-method signature="clickAndCheckButtonMenu()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:18 EEST" name="clickAndCheckButtonMenu" finished-at="2023-05-18T17:24:18 EEST" duration-ms="209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAndCheckButtonMenu -->
-        <test-method signature="clickOnAllItemsButton()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:35 EEST" name="clickOnAllItemsButton" finished-at="2023-05-11T17:30:35 EEST" duration-ms="331" status="PASS">
+        <test-method signature="clickOnAllItemsButton()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:18 EEST" name="clickOnAllItemsButton" finished-at="2023-05-18T17:24:19 EEST" duration-ms="312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnAllItemsButton -->
-        <test-method is-config="true" signature="clearCookLocalStorage()[pri:0, instance:Tests.InventoryPageTest.InventoryPageTests@76304b46]" started-at="2023-05-11T17:30:42 EEST" name="clearCookLocalStorage" finished-at="2023-05-11T17:30:42 EEST" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="clearCookLocalStorage()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:25 EEST" name="clearCookLocalStorage" finished-at="2023-05-18T17:24:25 EEST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearCookLocalStorage -->
-      </class> <!-- Tests.InventoryPageTest.InventoryPageTests -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.InventoryPageTest.inventoryPageTests@21ae6e73]" started-at="2023-05-18T17:24:25 EEST" name="close" finished-at="2023-05-18T17:24:26 EEST" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- tests.InventoryPageTest.inventoryPageTests -->
     </test> <!-- D:/Test_Frame -->
   </suite> <!-- All Test Suite -->
 </testng-results>

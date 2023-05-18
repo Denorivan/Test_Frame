@@ -1,22 +1,22 @@
-package Tests.Base;
+package tests.base;
 
-import AllPages.Base.BasePage;
-import AllPages.Pages.InventoryPage;
-import AllPages.Pages.LoginPage;
-import Common.CommonActions;
+import allPages.base.basePage;
+import allPages.pages.inventoryPage;
+import allPages.pages.loginPage;
+import common.commonActions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 
-import static Common.Config.CLEAR_STORAGE;
-import static Common.Config.HOLD_BROWSER_OPEN;
+import static common.config.CLEAR_STORAGE;
+import static common.config.HOLD_BROWSER_OPEN;
 
-public class BaseTest {
-    protected WebDriver driver = CommonActions.createDriver();
-    protected BasePage basePage = new BasePage(driver);
-    protected LoginPage loginPage = new LoginPage(driver);
-    protected InventoryPage inventoryPage = new InventoryPage(driver);
+public class baseTest {
+    protected WebDriver driver = commonActions.createDriver();
+    protected allPages.base.basePage basePage = new basePage(driver);
+    protected allPages.pages.loginPage loginPage = new loginPage(driver);
+    protected allPages.pages.inventoryPage inventoryPage = new inventoryPage(driver);
 
     @AfterTest
     public void clearCookLocalStorage(){
@@ -27,11 +27,11 @@ public class BaseTest {
         }
     }
 
-   /* @AfterSuite
+    @AfterSuite
     public void close(){
         if (HOLD_BROWSER_OPEN){
             driver.close();
             driver.quit();
         }
-    }*/
+    }
 }

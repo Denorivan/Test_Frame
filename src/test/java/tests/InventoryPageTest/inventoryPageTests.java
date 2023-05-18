@@ -1,11 +1,11 @@
-package Tests.InventoryPageTest;
+package tests.InventoryPageTest;
 
-import Tests.Base.BaseTest;
+import tests.base.baseTest;
 import org.testng.annotations.Test;
 
-import static Constants.Constant.UrlVariable.LOGIN_PAGE;
+import static constants.constant.UrlVariable.LOGIN_PAGE;
 
-public class InventoryPageTests extends BaseTest {
+public class inventoryPageTests extends baseTest {
 
     @Test
     public void checkThatLogoIsPresentOnPage(){

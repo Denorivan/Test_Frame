@@ -1,14 +1,14 @@
-package Tests.LoginPage;
+package tests.loginPage;
 
-import Tests.Base.BaseTest;
+import tests.base.baseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static Constants.Constant.UrlVariable.LOGIN_PAGE;
+import static constants.constant.UrlVariable.LOGIN_PAGE;
 
 
 
-public class LoginPageTests extends BaseTest {
+public class loginPageTests extends baseTest {
     @Test
     public void checkToLoginCorrectUser(){
         basePage.open(LOGIN_PAGE);
