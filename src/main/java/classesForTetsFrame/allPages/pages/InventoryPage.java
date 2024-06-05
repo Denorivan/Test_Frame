@@ -22,6 +22,7 @@ public class InventoryPage extends BasePage {
     private final By priceFromCard = By.xpath("//div[@class='inventory_item_price']");
     private final By nestedDescribeFromCard = By.xpath(".//div[@class='inventory_item_desc']");
     private final By nestedAddButtonFromCard = By.xpath(".//button[contains(text(), 'Add to cart')]");
+    private final By nestedAddButtonFromCardSecond = By.xpath("(.//button[contains(text(), 'Add to cart')])[2]");
     private final By nestedAddIconImgFromCard = By.xpath(".//img[@class='inventory_item_img']");
     private final By nestedItemDescriptionFromCard = By.xpath(".//div[@class='inventory_item_description']");
     private final By sortContainer = By.xpath("//select[@class='product_sort_container']");
@@ -84,6 +85,15 @@ public class InventoryPage extends BasePage {
         for (WebElement oneItem : elements) {
             WebElement find = oneItem.findElement(nestedAddButtonFromCard);
         }
+        return this;
+    }
+
+    public InventoryPage clickOnFirstElementToAddProductInCheckout(){
+        driver.findElement(nestedAddButtonFromCard).click();
+        return this;
+    }
+    public InventoryPage clickOnSecondElementToAddProductInCheckout(){
+        driver.findElement(nestedAddButtonFromCardSecond).click();
         return this;
     }
 
@@ -191,9 +201,8 @@ public class InventoryPage extends BasePage {
         return this;
     }
 
-    public InventoryPage checkThatShoppingCardIsClickable(){
+    public InventoryPage clickOnShoppingCard(){
         driver.findElement(shoppingCard).click();
-        driver.findElement(shoppingCardTitleAfterClick);
         return this;
     }
 

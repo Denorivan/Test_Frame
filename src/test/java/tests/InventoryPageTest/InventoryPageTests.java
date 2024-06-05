@@ -165,6 +165,9 @@ public class InventoryPageTests extends BaseTest {
                 .fillFormPasswordToAllUsersByValidStandardPassword()
                 .pressLoginsButton();
         inventoryPage
+                .clickOnShoppingCard();
+
+        checkoutPageTest
                 .checkThatShoppingCardIsClickable();
     }
 
