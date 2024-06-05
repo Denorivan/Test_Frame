@@ -120,7 +120,7 @@ public class InventoryPageTests extends BaseTest {
 
 
     @Test
-    public void checkThatSortContainerIsWorkZA(){
+    public void checkThatSortContainerIsWorkZA(){ ///
         basePage.open(LOGIN_PAGE);
 
         loginPage
@@ -169,7 +169,7 @@ public class InventoryPageTests extends BaseTest {
     }
 
     @Test
-    public void checkThatSortContainerIsWorkAZ(){
+    public void checkThatSortContainerIsWorkAZ(){ //
         basePage.open(LOGIN_PAGE);
 
         loginPage

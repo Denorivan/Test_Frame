@@ -17,11 +17,11 @@ public class InventoryPage extends BasePage {
     private final By logo = By.xpath("//*[@id='header_container']/div[1]/div[2]/div");
     private final By card = By.xpath("//div[@class='inventory_item']");
     private final By nestedPriceFromCard = By.xpath(".//div[@class='inventory_item_price']");
-    private final By nestedNameFromCard = By.xpath(".//div[@class='inventory_item_name']");
-    private final By nameFromCard = By.xpath("//div[@class='inventory_item_name']");
+    private final By nestedNameFromCard = By.xpath(".//div[@data-test=\"inventory-item-name\"]");
+    private final By nameFromCard = By.xpath("//div[@class='inventory_item_name ']");
     private final By priceFromCard = By.xpath("//div[@class='inventory_item_price']");
     private final By nestedDescribeFromCard = By.xpath(".//div[@class='inventory_item_desc']");
-    private final By nestedAddButtonFromCard = By.xpath(".//button[@class='btn btn_primary btn_small btn_inventory']");
+    private final By nestedAddButtonFromCard = By.xpath(".//button[contains(text(), 'Add to cart')]");
     private final By nestedAddIconImgFromCard = By.xpath(".//img[@class='inventory_item_img']");
     private final By nestedItemDescriptionFromCard = By.xpath(".//div[@class='inventory_item_description']");
     private final By sortContainer = By.xpath("//select[@class='product_sort_container']");
@@ -127,7 +127,6 @@ public class InventoryPage extends BasePage {
             currentTextValueName.add(element.getText());
             System.out.println(element.getText());
         }
-
         if (currentTextValueName.equals(expectedTextValueName)){
             Assert.assertEquals(expectedTextValueName, currentTextValueName, "Correct up to Z - A");
         } else {
